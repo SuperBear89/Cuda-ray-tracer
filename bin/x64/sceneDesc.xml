@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<image width="1280" height="720" fov="90" quality="8">
+	<scene>
+		<!--floor-->
+		<object type="plane">
+			<pos x="-20" y="1020" z="1300"/>
+			<pos x="1300" y="1020" z="1300"/>
+			<pos x="1300" y="1020" z="-20"/>
+			<pos x="-20" y="1020" z="-20"/>
+			<material type="diffuse" r="128" g="128" b="128" />
+		</object>
+		<!--roof-->
+		<object type="plane">
+			<pos x="-20" y="-300" z="-20"/>
+			<pos x="1300" y="-300" z="-20"/>
+			<pos x="1300" y="-300" z="1300"/>
+			<pos x="-20" y="-300" z="1300"/>
+			<material type="diffuse" r="128" g="128" b="128" />
+		</object>
+		<!--left wall-->
+		<object type="plane">
+			<pos x="-20" y="-300" z="-20"/>
+			<pos x="-20" y="-300" z="1300"/>
+			<pos x="-20" y="1020" z="1300"/>
+			<pos x="-20" y="1020" z="-20"/>
+			<material type="diffuse" r="192" g="128" b="128" />
+		</object>
+		<!--right wall-->
+		<object type="plane">
+			<pos x="1300" y="1020" z="-20"/>
+			<pos x="1300" y="1020" z="1300"/>
+			<pos x="1300" y="-300" z="1300"/>
+			<pos x="1300" y="-300" z="-20"/>
+			<material type="diffuse" r="64" g="192" b="192" />
+		</object>
+		<!--front wall-->
+		<object type="plane">
+			<pos x="-20" y="-300" z="1300"/>
+			<pos x="1300" y="-300" z="1300"/>
+			<pos x="1300" y="1020" z="1300"/>
+			<pos x="-20" y="1020" z="1300"/>
+			<material type="diffuse" r="128" g="128" b="128" />
+		</object>		
+		<!--back wall-->
+		<object type="plane">
+			<pos x="-20" y="1020" z="-20"/>
+			<pos x="1300" y="1020" z="-20"/>
+			<pos x="1300" y="-300" z="-20"/>
+			<pos x="-20" y="-300" z="-20"/>
+			<material type="diffuse" r="128" g="128" b="128" />
+		</object>
+		
+		<object type="sphere" radius="160">
+			<pos x="660" y="-220" z="650"/>
+			<material type="emission" r="128" g="128" b="128" />
+		</object>
+		<object type="sphere" radius="220">
+			<pos x="440" y="800" z="950"/>
+			<material type="reflective" r="32" g="240" b="32" />
+		</object>
+		<object type="sphere" radius="160">
+			<pos x="1100" y="860" z="650"/>
+			<material type="reflective" r="128" g="128" b="128" />
+		</object>
+		<object type="sphere" radius="120">
+			<pos x="660" y="900" z="650"/>
+			<material type="reflective" r="128" g="128" b="128" />
+		</object>
+	</scene>
+</image>
